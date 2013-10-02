@@ -10,6 +10,6 @@ public:
 	RenderSystem(void) {};
 	~RenderSystem(void) {};
 
-	void update(boost::ptr_map<unsigned long, Entity>& entities, sf::RenderWindow& window);
+	void update(std::map<unsigned long, std::unique_ptr<Entity>>& entities, sf::RenderWindow& window);
 	
 };

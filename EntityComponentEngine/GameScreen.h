@@ -5,20 +5,17 @@
 #include "RenderSystem.h"
 #include "Entity.h"
 #include "SpriteManager.h"
-#include "SpriteRenderComponent.h"
-#include "PositionComponent.h"
-#include "SizeComponent.h"
+#include "InputManager.h"
 
 class GameScreen : public Screen
 {
 public:
-	GameScreen(void);
-	~GameScreen(void);
+	GameScreen(const float resolutionScalar, const float pixelsPerUnit) : Screen(resolutionScalar, pixelsPerUnit) {};
+	~GameScreen(void) {};
 
 	virtual int run(sf::RenderWindow& window);
 
 private:
-	sf::Event event;
 	boost::ptr_vector<Entity> entities;
 };
 

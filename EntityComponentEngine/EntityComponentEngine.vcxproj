@@ -90,6 +90,12 @@
     <ClInclude Include="Entity.h" />
     <ClInclude Include="EntityManager.h" />
     <ClInclude Include="GameScreen.h" />
+    <ClInclude Include="InputManager.h" />
+    <ClInclude Include="InputMessage.h" />
+    <ClInclude Include="Message.h" />
+    <ClInclude Include="MessageSender.h" />
+    <ClInclude Include="MessageManager.h" />
+    <ClInclude Include="MouseClickMessage.h" />
     <ClInclude Include="PositionComponent.h" />
     <ClInclude Include="RenderComponent.h" />
     <ClInclude Include="RenderSystem.h" />
@@ -107,7 +113,9 @@
     <ClCompile Include="Entity.cpp" />
     <ClCompile Include="EntityManager.cpp" />
     <ClCompile Include="GameScreen.cpp" />
+    <ClCompile Include="InputManager.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="MessageManager.cpp" />
     <ClCompile Include="RenderSystem.cpp" />
     <ClCompile Include="SpriteFactory.cpp" />
     <ClCompile Include="SpriteManager.cpp" />

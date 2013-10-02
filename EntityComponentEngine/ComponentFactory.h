@@ -13,7 +13,7 @@ public:
 
 	PositionComponent* getPositionComponent(float positionX, float positionY);
 	SizeComponent* getSizeComponent(float width, float height);
-	SpriteRenderComponent* getSpriteRenderComponent(std::string spriteSheet, std::string sprite, sf::Vector2f initialPosition);
+	SpriteRenderComponent* getSpriteRenderComponent(std::string spriteSheet, std::string sprite, sf::Vector2f initialPosition, float scale);
 
 private:
 	SpriteManager sm;
